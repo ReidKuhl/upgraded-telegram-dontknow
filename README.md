@@ -11,3 +11,8 @@ I would like to try to make a jiujitsu database for myself and others at the gym
 I like this color scheme. And want to use a simple layout like this:
 
 <img width="826" height="465" alt="image" src="https://github.com/user-attachments/assets/0a01109d-2d8b-4ded-ab6d-269c35b087e4" />
+
+
+I like this login page with the design in the background and the login a blurry layer over it
+
+<img width="657" height="296" alt="image" src="https://github.com/user-attachments/assets/2784d813-f0f4-4041-a327-2f6a0341ea0e" />
