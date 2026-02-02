@@ -19,7 +19,7 @@ I like this login page with the design in the background and the login a blurry 
 
 
 this is a clean css
-```
+```html
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik+Mono+One&display=swap');
