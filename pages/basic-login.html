@@ -1,0 +1,58 @@
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button id="signin">Sign In</button>
+<button id="signout">Sign Out</button>
+
+<div id="secretStuff"></div>
+
+<script>
+  const superSecurePassword = "lasagna";
+
+  //signin stuff
+  document.getElementById("signin")
+  //event calling a function: signin.addEventListener('click', verifyClick);
+
+  //iife = immediately invoked function expression
+  //arrow function
+  signin.addEventListener('click', () => {
+    /*code goes here*/
+    console.log('in sign in button click event');
+
+    //todo: collect stuff from dom
+    console.log(document.getElementById('signin').value);
+    const userPassword = document.getElementById('password').value;
+    console.log('user entered password:', userPassword);
+
+    //todo: check the password: if lasagna the pass, else no pass
+    if (userPassword == superSecurePassword) {
+      document.getElementById('secretStuff').innerHTML = '<h1>user signed in! 🎉</h1>';
+
+      //todo: go somewhere else 
+      window.location.href = 'content.html';
+
+      //store login data
+      sessionStorage.setItem('authN', true);
+
+    } else {
+      document.getElementById('secretStuff').innerText = 'damned to the lowest depths of hell! 🔥';
+    }
+  });
+
+  //signout stuff
+  document.getElementById("signout").addEventListener('click', () => {
+    console.log('does this button even work?');
+    //clear session storage
+    sessionStorage.removeItem('authN');
+    document.getElementById('secretStuff').innerHTML = '<h1>user signed out! 👋</h1>';
+  });
+
+  //name void function (no return type)
+  function verifyClick() {
+    console.log('button clicked');
+    //return 2, string, event, object, boolean to remove voidness 
+  }
+
+  // verifyClick();
+
+
+</script>
